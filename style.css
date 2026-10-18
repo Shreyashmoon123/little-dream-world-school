@@ -76,6 +76,8 @@ header { position: sticky; top: 0; z-index: 1020; }
     padding: 100px 0;
 }
 
+
+
 .hero-content {
     max-width: 750px;
 }
@@ -146,6 +148,40 @@ header { position: sticky; top: 0; z-index: 1020; }
 .stat-card { height: 100%; padding: 22px 15px; background: var(--secondary-color); border: 1px solid #dbeafe; border-radius: 12px; text-align: center; }
 .stat-card h3 { color: var(--primary-color); font-weight: 800; margin-bottom: 5px; }
 .stat-card p { margin: 0; font-size: 0.9rem; }
+@media (max-width: 767.98px) {
+    /* Hero section ke liye background fix */
+    .hero-section {
+        min-height: 400px;
+        background-size: cover;
+        background-position: center;
+        padding: 50px 0;
+    }
+
+    /* About section ya general images ke liye */
+    .about-image {
+        height: 280px !important;
+        object-fit: cover !important;
+        width: 100% !important;
+    }
+
+    /* School Gallery Carousel images ke liye */
+    #schoolGallery .carousel-item img {
+        height: 240px !important;
+        object-fit: cover !important;
+    }
+
+    /* Leadership section image ke liye */
+    .leader-image-wrapper {
+        height: 300px !important;
+    }
+    
+    .leader-image {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center top !important;
+    }
+}
 
 .why-choose-section { background: #f8fafc; }
 .feature-card { background: var(--white-color); padding: 30px 22px; border: 1px solid var(--border-color); border-radius: 15px; box-shadow: 0 5px 20px rgba(15,23,42,0.04); transition: transform 0.3s ease; }
@@ -176,6 +212,10 @@ header { position: sticky; top: 0; z-index: 1020; }
 .form-label { color: var(--heading-color); font-weight: 600; }
 .form-control, .form-select { min-height: 48px; border-color: #cbd5e1; border-radius: 8px; padding: 11px 14px; }
 textarea.form-control { min-height: 120px; }
+#address {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
 
 .leadership-section { background: #f8fafc; }
 .leader-card { max-width: 680px; margin: 0 auto; background: var(--white-color); border-radius: 20px; overflow: hidden; box-shadow: 0 12px 35px rgba(15,23,42,0.06); border: 1px solid #eef2f6; }
@@ -235,5 +275,12 @@ textarea.form-control { min-height: 120px; }
         height: 100%;
         object-fit: contain;
         object-position: center;
+    }
+}
+@media (max-width: 767.98px) {
+   
+    .hero-section {
+        min-height: auto;
+        padding: 40px 0 20px 0;
     }
 }
